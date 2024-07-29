@@ -23,3 +23,11 @@ const linkAction = () => {
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+// Change header color
+const baseColorHeader = () =>{
+    const header = document.getElementById('header')
+    this.scrollY >= 50 ? header.classList.add('baseColorHeader') : header.classList.remove('baseColorHeader')
+}
+window.addEventListener('scroll', baseColorHeader)

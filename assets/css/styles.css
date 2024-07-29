@@ -228,7 +228,17 @@ main {
     right: 0;
 }
 
-
+/* Set base color to header */
+.baseColorHeader{
+    background-color: rgb(16, 17, 26);
+}
+.baseColorHeader::after {
+    content: '';
+    position: absolute;
+    width: 1000%;
+    height: 100%;
+    background-color: hsla(0%, 0%, 10%, .3);
+}
 
 /* Home Section Styles*/
 .home{
