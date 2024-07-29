@@ -1,4 +1,4 @@
-/*=============== GOOGLE FONTS ===============*/
+/* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
@@ -27,7 +27,7 @@
   --body-color: hsl(228, 15%, 20%);
   --container-color: hsl(228, 15%, 15%);
 
-  /*========== Font and typography ==========*/
+/* Font and typography */
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2rem;
@@ -49,7 +49,7 @@
   --z-fixed: 100;
 }
 
-/*========== Responsive typography ==========*/
+/* Responsive typography */
 @media screen and (min-width: 1152px) {
   :root {
     --biggest-font-size: 4rem;
@@ -63,7 +63,7 @@
   }
 }
 
-/*=============== BASE ===============*/
+/* CSS Base */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -86,3 +86,70 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
 }
+
+input,
+textarea,
+button{
+    outline: none;
+    border: none;
+}
+
+h1, h2, h3, h4 {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+svg {
+    min-width: 100%;
+    height: auto;
+}
+
+/* CSS Reusable */
+.container {
+    max-width: 1220px;
+    margin-inline: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 2rem;
+}
+
+.section__title,
+.section__subtitle {
+    text-align: center;
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.section__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.section__subtitle {
+    font-size: var(--small-font-size);
+    margin-bottom: .25rem;
+}
+
+.section__subtitle span {
+    color: var(--first-color);
+}
+
+main {
+    overflow: hidden;
+}
+
