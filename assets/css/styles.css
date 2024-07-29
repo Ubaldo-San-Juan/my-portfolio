@@ -153,3 +153,68 @@ main {
     overflow: hidden;
 }
 
+
+/* Header and Nav */
+.header{
+    position: fixed;
+    width: 100%;
+    background-color: var(--container-color);
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__logo span {
+    color: var(--first-color);
+}
+
+.nav__toggle,
+.nav__close {
+    display: flex;
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+/* Mediaquery for mobile */
+@media screen and (max-width: 1023px){
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: hsla(0, 0%, 10%, .3);
+        width: 75%;
+        height: 100%;
+        padding: 4.5rem 0 0 3rem;
+        backdrop-filter: blur(24px);
+        transition: right .4s;
+    }
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.nav__link {
+    color: var(--title-color);
+    transition: color .4s;
+}
+
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+.nav__close {
+    position: absolute;
+}
