@@ -217,4 +217,11 @@ main {
 
 .nav__close {
     position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+/* Show menu for Javascript */
+.show-menu {
+    right: 0;
 }
