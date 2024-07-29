@@ -159,6 +159,7 @@ main {
     position: fixed;
     width: 100%;
     background-color: var(--container-color);
+    z-index: var(--z-fixed);
 }
 
 .nav {
@@ -197,6 +198,7 @@ main {
         padding: 4.5rem 0 0 3rem;
         backdrop-filter: blur(24px);
         transition: right .4s;
+        z-index: var(--z-fixed);
     }
 }
 
@@ -228,7 +230,7 @@ main {
 
 
 
-/* Home styles */
+/* Home Section Styles*/
 .home{
     background-color: var(--container-color);
 }
@@ -307,3 +309,17 @@ main {
     box-shadow: 0 8px 24px hsl(var(--hue), 100%, 40% , .25);
 }
 
+
+
+/* About Section Styles*/
+.about__container {
+    row-gap: 2.5rem;
+}
+
+.about__data {
+    text-align: center;
+}
+
+.about__description {
+    margin-bottom: 2rem;
+}
