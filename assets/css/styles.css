@@ -333,3 +333,58 @@ main {
 .about__description {
     margin-bottom: 2rem;
 }
+
+
+/* Section Skills Styles */
+.skills {
+    background-color: var(--container-color);
+  }
+  
+  .skills__container {
+    padding-bottom: 2rem;
+    row-gap: 3.5rem;
+  }
+  
+  .skills__data {
+    text-align: center;
+  }
+  
+  .skills__description {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .skills__content,
+  .skills__group {
+    display: grid;
+  }
+  
+  .skills__group-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .skills__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .skills__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .skills__item:hover {
+    background-color: var(--hover-color);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  

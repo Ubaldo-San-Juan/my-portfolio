@@ -31,3 +31,6 @@ const baseColorHeader = () =>{
     this.scrollY >= 50 ? header.classList.add('baseColorHeader') : header.classList.remove('baseColorHeader')
 }
 window.addEventListener('scroll', baseColorHeader)
+
+
+
