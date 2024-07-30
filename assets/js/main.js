@@ -32,5 +32,27 @@ const baseColorHeader = () =>{
 }
 window.addEventListener('scroll', baseColorHeader)
 
+const contactForm = document.getElementById('contact-form')
+const contactMessage = document.getElementById('contact-message')
 
+const sendEmail = (e) => {
+    e.preventDefault()
+    
+    emailjs.sendForm('service_0z2t7ol', 'template_jtykmpi', '#contact-form', 'cn1Fc33zKEB27qvic')
+    .then(() => {
+        contactMessage.textContent = 'El mensaje ha sido enviado exitosamente ✅'
+        
+        // Remove message after 5 seconds
+        setTimeout(() => {
+            contactMessage.textContent = ''
+        }, 5000);
+
+        // Clean inputs
+        contactForm.reset()
+    }), () => {
+        contactMessage.textContent = 'El mensaje no se envió corrobora tus datos ❌'
+    }
+}
+
+contactForm.addEventListener('submit', sendEmail)
 
