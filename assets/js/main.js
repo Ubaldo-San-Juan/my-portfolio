@@ -77,3 +77,104 @@ const scrollActive = () => {
 }
 
 window.addEventListener('scroll', scrollActive)
+
+
+// Scroll animation
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: '2500',
+    delay: 400,
+    reset: true
+})
+
+sr.reveal(`.home__data, .home__social`)
+
+
+// Projects
+document.addEventListener('DOMContentLoaded', function() {
+    // Datos de proyectos
+    const projects = [
+        {
+            title: "La Casa de la Tía",
+            date: "Agosto 2024",
+            description: "Sitio web oficial del restaurante llamado La Casa de la Tía",
+            skills: ["Angular", "HTML", "CSS", "Typescript"],
+            githubLink: "https://github.com/user/trackify",
+            projectLink: "https://lacasadelatiahuasca.com/",
+            category: "frontend",
+            image: "/assets/img/projects/frontend/la-casa-de-la-tia.png"
+        },
+        {
+            title: "Portafolio web personal",
+            date: "Agosto 2024",
+            description: "Developed a full-stack web application that allows users to search for, play, and pause...",
+            skills: ["HTML", "CSS", "Javascript"],
+            githubLink: "https://github.com/user/podstream",
+            projectLink: "https://podstream.example.com",
+            category: "frontend",
+            image: "/assets/img/projects/frontend/my-portfolio.png"
+        },
+        {
+            title: "Axio - API",
+            date: "Julio 2024",
+            description: "Developed a RESTful API using Node.js and Express for managing data...",
+            skills: [".Net Core", "Entity Framework", "PostgreSQL", "JWT"],
+            githubLink: "https://github.com/user/api-backend",
+            projectLink: "https://api-backend.example.com",
+            category: "backend",
+            image: "/assets/img/projects/backend/axio-api.png"
+        },
+        {
+            title: "Desktop App",
+            date: "Aug 2023 - Oct 2023",
+            description: "Created a desktop application for inventory management using Electron and React...",
+            skills: ["Electron", "React Js", "Node Js"],
+            githubLink: "https://github.com/user/desktop-app",
+            projectLink: "https://desktop-app.example.com",
+            category: "otros",
+            image: "path/to/desktop-app.png"
+        }
+    ];
+
+    const projectsContainer = document.querySelector('.projects__content');
+    const filterButtons = document.querySelectorAll('.projects__filter-btn');
+
+    function renderProjects(category) {
+        projectsContainer.innerHTML = ''; // Limpiar contenedor de proyectos
+        const filteredProjects = category === 'all' ? projects : projects.filter(project => project.category === category);
+
+        filteredProjects.forEach(project => {
+            const projectItem = `
+                <div class="projects__item" data-category="${project.category}">
+                    <img src="${project.image}" alt="${project.title} Project" class="projects__img">
+                    <div class="projects__item-info">
+                        <h3 class="projects__item-title">${project.title}</h3>
+                        <span class="projects__item-date">${project.date}</span>
+                        <p class="projects__item-description">${project.description}</p>
+                        <div class="projects__item-skills">
+                            ${project.skills.map(skill => `<span>${skill}</span>`).join('')}
+                        </div>
+                        <div class="projects__item-buttons">
+                            <a href="${project.githubLink}" class="projects__item-button" target="_blank">Ver en GitHub</a>
+                            <a href="${project.projectLink}" class="projects__item-button" target="_blank">Visitar Proyecto</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+            projectsContainer.insertAdjacentHTML('beforeend', projectItem);
+        });
+    }
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            const filterCategory = this.getAttribute('data-filter');
+            renderProjects(filterCategory);
+        });
+    });
+
+    // Renderizar todos los proyectos al cargar la página
+    renderProjects('all');
+});
