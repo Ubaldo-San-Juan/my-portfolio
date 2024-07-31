@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "Developed a full-stack web application that allows users to search for, play, and pause...",
             skills: ["HTML", "CSS", "Javascript"],
             githubLink: "https://github.com/user/podstream",
-            projectLink: "https://podstream.example.com",
+            projectLink: "https://ubaldosanjuandev.netlify.app/",
             category: "frontend",
             image: "/assets/img/projects/frontend/my-portfolio.png"
         },
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
             image: "/assets/img/projects/backend/axio-api.png"
         },
         {
-            title: "Desktop App",
+            title: "Sistema Control de clientes por tiempo",
             date: "Aug 2023 - Oct 2023",
             description: "Aplicación de escritorio indispensable para cibercafés y negocios similares, diseñada para gestionar el cobro de tiempos de uso de manera eficiente y sencilla.",
             skills: ["Java", "Java Swing"],
