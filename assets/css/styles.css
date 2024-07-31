@@ -233,7 +233,6 @@ main {
     background-color: rgb(16, 17, 26);
 }
 .baseColorHeader::after {
-    content: '';
     position: absolute;
     width: 1000%;
     height: 100%;
@@ -516,6 +515,7 @@ main {
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+
 }
 
 .projects__filter-btn {
@@ -526,6 +526,7 @@ main {
     margin: 0 0.5rem;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
+    border-radius: 12px;
 }
 
 .projects__filter-btn:hover,
@@ -547,6 +548,8 @@ main {
     margin: 1rem;
     overflow: hidden;
     width: 300px;
+    display: flex;
+    flex-direction: column; /* Hace que el contenedor sea flexible en columna */
 }
 
 .projects__img {
@@ -557,6 +560,9 @@ main {
 .projects__item-info {
     padding: 1rem;
     text-align: left;
+    display: flex;
+    flex-direction: column; /* Hace que el contenedor de la info sea flexible en columna */
+    flex-grow: 1; /* Permite que crezca para ocupar el espacio disponible */
 }
 
 .projects__item-title {
@@ -583,6 +589,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-bottom: 13px;
 }
 
 .projects__item-skills span {
@@ -593,10 +600,8 @@ main {
     font-size: var(--small-font-size);
 }
 
-
-
 .projects__item-buttons {
-    margin-top: 1rem;
+    margin-top: auto; /* Empuja los botones hacia abajo */
     display: flex;
     gap: 1rem;
 }
@@ -629,6 +634,110 @@ main {
 .projects__item-button:hover {
     opacity: 0.8;
 }
+
+
+/* Education Section */
+.education {
+    padding-block: 5rem 2rem;
+    background-color: var(--background-color); /* Set the background color */
+}
+
+.education__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.education__general-container {
+    background-color: var(--container-color); /* Set the background color for the general container */
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 2rem;
+    box-shadow: 0 0 10px 5px #2f4362; /* Neon blue glow */
+}
+
+.education__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+}
+
+.education__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+    background-color: #333; /* Set the color for the education items */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    width: 100%; /* Make items fill the container width */
+    max-width: 100%; /* Ensure items don’t exceed the container width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.education__item-content {
+    color: var(--container-color); /* Use container color for text */
+    width: 100%;
+    text-align: left;
+}
+
+.education__item-title {
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 0.5rem;
+}
+
+.education__item-institution,
+.education__item-date {
+    display: block;
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    margin-bottom: 1rem;
+}
+
+.education__item-description {
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    margin-bottom: 1rem;
+}
+
+.education__timeline {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: var(--primary-color);
+}
+
+.education__circle {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+    right: -5px;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.education__item:last-child .education__timeline {
+    height: 50%;
+}
+
+.education__item:not(:last-child) .education__circle {
+    bottom: 0;
+}
+
 
 
 
@@ -745,6 +854,8 @@ main {
     .services__card {
         padding-block: 1.5rem;
     }
+
+
 }
 
 
