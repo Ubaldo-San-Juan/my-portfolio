@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Axio - API",
             date: "Julio 2024",
             description: "Developed a RESTful API using Node.js and Express for managing data...",
-            skills: [".Net Core", "Entity Framework", "PostgreSQL", "JWT"],
+            skills: [".Net Core", "Entity Framework", "PostgreSQL", "Swagger"],
             githubLink: "https://github.com/user/api-backend",
             projectLink: "https://api-backend.example.com",
             category: "backend",
@@ -128,12 +128,12 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             title: "Desktop App",
             date: "Aug 2023 - Oct 2023",
-            description: "Created a desktop application for inventory management using Electron and React...",
-            skills: ["Electron", "React Js", "Node Js"],
-            githubLink: "https://github.com/user/desktop-app",
+            description: "Aplicación de escritorio indispensable para cibercafés y negocios similares, diseñada para gestionar el cobro de tiempos de uso de manera eficiente y sencilla.",
+            skills: ["Java", "Java Swing"],
+            githubLink: "https://github.com/Ubaldo-San-Juan/SistemaControlClientes_V1",
             projectLink: "https://desktop-app.example.com",
             category: "otros",
-            image: "path/to/desktop-app.png"
+            image: "/assets/img/projects/others/control-clientes-tiempo.png"
         }
     ];
 
