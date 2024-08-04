@@ -655,7 +655,6 @@ main {
     background-color: var(--container-color); /* Set the background color for the general container */
     padding: 2rem;
     border-radius: 0.5rem;
-    width: 100%;
     max-width: 800px;
     margin-top: 2rem;
     box-shadow: 0 0 10px 5px #2f4362; /* Neon blue glow */
@@ -839,6 +838,26 @@ main {
 
 
 /* BreakPoints */
+
+
+/* For small devices */
+@media screen and (max-width: 256px){
+    .container{
+        margin-inline: 1rem;
+    }
+
+    .skills__content {
+        grid-template-columns: max-content;
+        row-gap: 1rem;
+    }
+    .contact__container {
+        width: 100%;
+    }
+
+}
+
+
+
 
 /* For small devices */
 @media screen and (max-width: 320px){

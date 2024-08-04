@@ -3,14 +3,14 @@ const navToggle = document.getElementById('nav-toggle')
 const navClose = document.getElementById('nav-close')
 
 // Show menu
-if (navToggle){
+if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
 
 // Menu hiden
-if (navClose){
+if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
@@ -26,7 +26,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 // Change header color
-const baseColorHeader = () =>{
+const baseColorHeader = () => {
     const header = document.getElementById('header')
     this.scrollY >= 50 ? header.classList.add('baseColorHeader') : header.classList.remove('baseColorHeader')
 }
@@ -37,21 +37,21 @@ const contactMessage = document.getElementById('contact-message')
 
 const sendEmail = (e) => {
     e.preventDefault()
-    
-    emailjs.sendForm('service_0z2t7ol', 'template_jtykmpi', '#contact-form', 'cn1Fc33zKEB27qvic')
-    .then(() => {
-        contactMessage.textContent = 'El mensaje ha sido enviado exitosamente ✅'
-        
-        // Remove message after 5 seconds
-        setTimeout(() => {
-            contactMessage.textContent = ''
-        }, 5000);
 
-        // Clean inputs
-        contactForm.reset()
-    }), () => {
-        contactMessage.textContent = 'El mensaje no se envió corrobora tus datos ❌'
-    }
+    emailjs.sendForm('service_0z2t7ol', 'template_jtykmpi', '#contact-form', 'cn1Fc33zKEB27qvic')
+        .then(() => {
+            contactMessage.textContent = 'El mensaje ha sido enviado exitosamente ✅'
+
+            // Remove message after 5 seconds
+            setTimeout(() => {
+                contactMessage.textContent = ''
+            }, 5000);
+
+            // Clean inputs
+            contactForm.reset()
+        }), () => {
+            contactMessage.textContent = 'El mensaje no se envió corrobora tus datos ❌'
+        }
 }
 
 contactForm.addEventListener('submit', sendEmail)
@@ -64,13 +64,13 @@ const scrollActive = () => {
 
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight,
-        sectionTop = current.offsetTop - 58,
-        sectionId = current.getAttribute('id'),
-        sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+            sectionTop = current.offsetTop - 58,
+            sectionId = current.getAttribute('id'),
+            sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             sectionsClass.classList.add('active-link')
-        }else {
+        } else {
             sectionsClass.classList.remove('active-link')
         }
     })
@@ -92,7 +92,7 @@ sr.reveal(`.home__data, .home__social`)
 
 
 // Projects
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Datos de proyectos
     const projects = [
         {
@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             filterButtons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
             const filterCategory = this.getAttribute('data-filter');
