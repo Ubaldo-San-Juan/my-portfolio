@@ -91,6 +91,73 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data, .home__social`)
 
 
+// Habilidades
+document.addEventListener('DOMContentLoaded', function () {
+    // Datos de habilidades
+    const skills = [
+        {
+            title: "Frontend",
+            items: [
+                { icon: "ri-html5-fill", text: "HTML5" },
+                { icon: "ri-css3-line", text: "CSS3" },
+                { icon: "ri-javascript-line", text: "JavaScript" },
+                { icon: "/assets/img/icons/angular-icon.svg", text: "Angular" }
+            ]
+        },
+        {
+            title: "Backend",
+            items: [
+                { icon: "/assets/img/icons/laravel-icon.svg", text: "Laravel" },
+                { icon: "/assets/img/icons/dotnet-icon.svg", text: ".Net Entity Framework" }
+            ]
+        },
+        {
+            title: "Bases de datos",
+            items: [
+                { icon: "/assets/img/icons/mysql-icon.svg", text: "Mysql" },
+                { icon: "/assets/img/icons/postgresql-icon.svg", text: "PostgreSQL" }
+            ]
+        },
+        {
+            title: "Sistemas Operativos",
+            items: [
+                { icon: "/assets/img/icons/linux-ubuntu-icon.svg", text: "Ubuntu" },
+                { icon: "/assets/img/icons/kali-linux-icon.svg", text: "Kali linux" }
+            ]
+        }
+    ];
+
+    const skillsContainer = document.querySelector('.skills__content');
+
+    function renderSkills() {
+        skills.forEach(skillGroup => {
+            const skillGroupHtml = `
+                <div class="skills__group">
+                    <h3 class="skills__group-title">${skillGroup.title}</h3>
+                    <ul class="skills__list">
+                        ${skillGroup.items.map(item => `
+                            <li class="skills__item">
+                                ${item.icon.startsWith('ri-') ? 
+                                    `<i class="${item.icon}"></i>` :
+                                    `<i><img src="${item.icon}" alt="" class="skills__icon"></i>`
+                                }
+                                <span>${item.text}</span>
+                            </li>
+                        `).join('')}
+                    </ul>
+                </div>
+            `;
+            skillsContainer.insertAdjacentHTML('beforeend', skillGroupHtml);
+        });
+    }
+
+    // Renderizar las habilidades al cargar la página
+    renderSkills();
+});
+
+
+
+
 // Projects
 document.addEventListener('DOMContentLoaded', function () {
     // Datos de proyectos
