@@ -405,6 +405,11 @@ main {
     color: #fff; /* Color del texto de los ítems */
   }
 
+  .skills__icon{
+    width: 1.5rem;
+    display: flex;
+    filter: hue-rotate(220deg) saturate(8%) brightness(100%);
+  }
 
 
 /* Experience Section */
@@ -873,7 +878,6 @@ main {
     .services__card {
         padding-block: 1.5rem;
     }
-
 
 }
 
