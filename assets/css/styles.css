@@ -200,6 +200,13 @@ main {
         transition: right .4s;
         z-index: var(--z-fixed);
     }
+    .button-CV {
+        margin-top: .8rem;
+
+    }
+    .contact__container {
+        align-items: center;
+    }
 }
 
 .nav__list {
