@@ -752,26 +752,7 @@ main {
 }
 
 
-
-/* Sección Contacto - Estilos generales */
-.contact {
-    padding: 2rem 1rem; /* Ajusta el padding general para la sección de contacto */
-    background-color: var(--background-color); /* Asegúrate de que el fondo sea visible */
-}
-
-.contact__subtitle {
-    font-size: var(--medium-font-size);
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.contact__title {
-    font-size: var(--large-font-size);
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-/* Ajustes generales de la contenedor del formulario */
+/* Section Contact */
 .contact__container {
     padding-top: 1rem;
 }
@@ -805,6 +786,7 @@ main {
 
 .contact__button {
     justify-self: center;
+    cursor: pointer;
 }
 
 .contact__message {
@@ -814,10 +796,6 @@ main {
     font-size: var(--small-font-size);
     color: var(--title-color);
 }
-
-
-
-
 
 /* Section Footer Styles */
 .footer {
@@ -882,9 +860,6 @@ main {
         grid-template-columns: max-content;
         row-gap: 1rem;
     }
-    .contact__container {
-        width: 100%;
-    }
 
 }
 
@@ -901,10 +876,6 @@ main {
         row-gap: 1rem;
     }
 
-    .services__card {
-        padding-block: 1.5rem;
-    }
-
     .education__item {
         padding: 1.1rem;
     }
@@ -915,34 +886,7 @@ main {
 
 
 @media screen and (max-width: 480px) {
-    .contact {
-        padding: 0.5rem; /* Ajusta aún más el padding de la sección */
-    }
 
-    .contact__subtitle {
-        font-size: var(--x-small-font-size); /* Ajusta el tamaño de la fuente */
-    }
-
-    .contact__title {
-        font-size: var(--small-font-size); /* Ajusta el tamaño de la fuente */
-    }
-
-    .contact__form {
-        padding: 0.5rem;
-    }
-
-    .contact__input {
-        padding: 1rem; /* Reduce aún más el padding en dispositivos muy pequeños */
-    }
-
-    .contact__form textarea {
-        height: 6rem; /* Reduce más la altura del textarea */
-    }
-
-    .contact__button {
-        padding: 1rem 1rem; /* Ajusta el padding del botón */
-        margin-bottom: 1rem;
-    }
 }
 
 
@@ -951,6 +895,10 @@ main {
 @media screen and (min-width: 576px) {
     .home__container,
     .skills__container,
+    .about__container,
+    .experience__container,
+    .projects__container,
+    .education__container,
     .contact__container
     {
         grid-template-columns: 360px;
@@ -1051,16 +999,17 @@ main {
         min-width: 0; /* Permite que las columnas se ajusten */
     }
 
-
-
-    
-    .contact__container{
+    .contact__container {
         grid-template-columns: 680px;
         padding-block: 2.5rem 2rem;
     }
+    
+    .contact__form {
+        row-gap: 1.5rem;
+    }
 
     .contact__group {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
         column-gap: 1.5rem;
     }
 
@@ -1068,7 +1017,7 @@ main {
         padding: 1.5rem;
     }
 
-    .contact__form textarea{
+    .contact__form textarea {
         height: 20rem;
     }
 
