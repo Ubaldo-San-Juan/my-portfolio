@@ -882,11 +882,14 @@ main {
     .button {
         padding-top: 10px;
     }
-}
 
+    .button-CV {
+        margin-right: 8px;
+    }
 
-@media screen and (max-width: 480px) {
-
+    .contact__input {
+        margin-right: 6px;
+    }
 }
 
 
@@ -904,6 +907,7 @@ main {
         grid-template-columns: 360px;
         justify-content: center;
     }
+
 }
 
 @media screen and (min-width: 768px){
