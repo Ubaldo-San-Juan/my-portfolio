@@ -672,7 +672,7 @@ main {
 
 .education__general-container {
     background-color: var(--container-color); /* Set the background color for the general container */
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 0.5rem;
     max-width: 800px;
     margin-top: 2rem;
