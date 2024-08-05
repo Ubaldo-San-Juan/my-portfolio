@@ -932,7 +932,7 @@ main {
     }
 
     .contact__input {
-        padding: 0.8rem; /* Reduce aún más el padding en dispositivos muy pequeños */
+        padding: 1rem; /* Reduce aún más el padding en dispositivos muy pequeños */
     }
 
     .contact__form textarea {
@@ -940,7 +940,8 @@ main {
     }
 
     .contact__button {
-        padding: 0.5rem 1rem; /* Ajusta el padding del botón */
+        padding: 1rem 1rem; /* Ajusta el padding del botón */
+        margin-bottom: 1rem;
     }
 }
 
