@@ -204,11 +204,32 @@ main {
         margin-top: .8rem;
 
     }
-    .contact__container {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-        text-align: center;
+    .contact {
+        padding: 0.5rem; /* Ajusta aún más el padding de la sección */
+    }
+
+    .contact__subtitle {
+        font-size: var(--x-small-font-size); /* Ajusta el tamaño de la fuente */
+    }
+
+    .contact__title {
+        font-size: var(--small-font-size); /* Ajusta el tamaño de la fuente */
+    }
+
+    .contact__form {
+        padding: 0.5rem;
+    }
+
+    .contact__input {
+        padding: 0.5rem; /* Reduce aún más el padding en dispositivos muy pequeños */
+    }
+
+    .contact__form textarea {
+        height: 6rem; /* Reduce más la altura del textarea */
+    }
+
+    .contact__button {
+        padding: 0.5rem 1rem; /* Ajusta el padding del botón */
     }
 }
 
@@ -759,9 +780,25 @@ main {
 
 
 
+/* Sección Contacto - Estilos generales */
+.contact {
+    padding: 2rem 1rem; /* Ajusta el padding general para la sección de contacto */
+    background-color: var(--background-color); /* Asegúrate de que el fondo sea visible */
+}
 
+.contact__subtitle {
+    font-size: var(--medium-font-size);
+    text-align: center;
+    margin-bottom: 1rem;
+}
 
-/* Section Contact styles */
+.contact__title {
+    font-size: var(--large-font-size);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Ajustes generales de la contenedor del formulario */
 .contact__container {
     padding-top: 1rem;
 }
@@ -804,6 +841,8 @@ main {
     font-size: var(--small-font-size);
     color: var(--title-color);
 }
+
+
 
 /* Section Footer Styles */
 .footer {
