@@ -157,10 +157,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
 // Projects
 document.addEventListener('DOMContentLoaded', function () {
-    // Datos de proyectos
+    // Datos de proyectos con visibilidad de botones
     const projects = [
         {
             title: "La Casa de la Tía",
@@ -170,7 +169,9 @@ document.addEventListener('DOMContentLoaded', function () {
             githubLink: "https://github.com/user/trackify",
             projectLink: "https://lacasadelatiahuasca.com/",
             category: "frontend",
-            image: "/assets/img/projects/frontend/la-casa-de-la-tia.png"
+            image: "/assets/img/projects/frontend/la-casa-de-la-tia.png",
+            showGithub: false,
+            showProject: true
         },
         {
             title: "Portafolio web personal",
@@ -180,7 +181,9 @@ document.addEventListener('DOMContentLoaded', function () {
             githubLink: "https://github.com/user/podstream",
             projectLink: "https://ubaldosanjuandev.netlify.app/",
             category: "frontend",
-            image: "/assets/img/projects/frontend/my-portfolio.png"
+            image: "/assets/img/projects/frontend/my-portfolio.png",
+            showGithub: true,
+            showProject: true
         },
         {
             title: "Axio - API",
@@ -190,17 +193,21 @@ document.addEventListener('DOMContentLoaded', function () {
             githubLink: "https://github.com/user/api-backend",
             projectLink: "https://api-backend.example.com",
             category: "backend",
-            image: "/assets/img/projects/backend/axio-api.png"
+            image: "/assets/img/projects/backend/axio-api.png",
+            showGithub: false,
+            showProject: false
         },
         {
             title: "Sistema Control de clientes por tiempo",
-            date: "Aug 2023 - Oct 2023",
+            date: "Ago 2023 - Oct 2023",
             description: "Aplicación de escritorio indispensable para cibercafés y negocios similares, diseñada para gestionar el cobro de tiempos de uso de manera eficiente y sencilla.",
             skills: ["Java", "Java Swing"],
-            githubLink: "https://github.com/Ubaldo-San-Juan/SistemaControlClientes_V1",
-            projectLink: "https://desktop-app.example.com",
+            githubLink: "",
+            projectLink: "",
             category: "otros",
-            image: "/assets/img/projects/others/control-clientes-tiempo.png"
+            image: "/assets/img/projects/others/control-clientes-tiempo.png",
+            showGithub: true,
+            showProject: false
         }
     ];
 
@@ -223,8 +230,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             ${project.skills.map(skill => `<span>${skill}</span>`).join('')}
                         </div>
                         <div class="projects__item-buttons">
-                            <a href="${project.githubLink}" class="projects__item-button" target="_blank">Ver en GitHub</a>
-                            <a href="${project.projectLink}" class="projects__item-button" target="_blank">Visitar Proyecto</a>
+                            ${project.showGithub ? `<a href="${project.githubLink}" class="projects__item-button" target="_blank">Ver en GitHub</a>` : ''}
+                            ${project.showProject ? `<a href="${project.projectLink}" class="projects__item-button" target="_blank">Visitar Proyecto</a>` : ''}
                         </div>
                     </div>
                 </div>
