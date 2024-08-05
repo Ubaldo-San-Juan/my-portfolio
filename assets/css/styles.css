@@ -204,33 +204,6 @@ main {
         margin-top: .8rem;
 
     }
-    .contact {
-        padding: 0.5rem; /* Ajusta aún más el padding de la sección */
-    }
-
-    .contact__subtitle {
-        font-size: var(--x-small-font-size); /* Ajusta el tamaño de la fuente */
-    }
-
-    .contact__title {
-        font-size: var(--small-font-size); /* Ajusta el tamaño de la fuente */
-    }
-
-    .contact__form {
-        padding: 0.5rem;
-    }
-
-    .contact__input {
-        padding: 0.5rem; /* Reduce aún más el padding en dispositivos muy pequeños */
-    }
-
-    .contact__form textarea {
-        height: 6rem; /* Reduce más la altura del textarea */
-    }
-
-    .contact__button {
-        padding: 0.5rem 1rem; /* Ajusta el padding del botón */
-    }
 }
 
 .nav__list {
@@ -844,6 +817,8 @@ main {
 
 
 
+
+
 /* Section Footer Styles */
 .footer {
     background-color: var(--container-color);
@@ -896,8 +871,6 @@ main {
 }
 
 
-/* BreakPoints */
-
 
 /* For small devices */
 @media screen and (max-width: 256px){
@@ -914,7 +887,6 @@ main {
     }
 
 }
-
 
 
 
@@ -940,6 +912,38 @@ main {
         padding-top: 10px;
     }
 }
+
+
+@media screen and (max-width: 480px) {
+    .contact {
+        padding: 0.5rem; /* Ajusta aún más el padding de la sección */
+    }
+
+    .contact__subtitle {
+        font-size: var(--x-small-font-size); /* Ajusta el tamaño de la fuente */
+    }
+
+    .contact__title {
+        font-size: var(--small-font-size); /* Ajusta el tamaño de la fuente */
+    }
+
+    .contact__form {
+        padding: 0.5rem;
+    }
+
+    .contact__input {
+        padding: 0.8rem; /* Reduce aún más el padding en dispositivos muy pequeños */
+    }
+
+    .contact__form textarea {
+        height: 6rem; /* Reduce más la altura del textarea */
+    }
+
+    .contact__button {
+        padding: 0.5rem 1rem; /* Ajusta el padding del botón */
+    }
+}
+
 
 
 /* For medium devices */
