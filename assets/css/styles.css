@@ -208,6 +208,7 @@ main {
     .contact__input {
         margin-right: 5px;
     }
+
 }
 
 .nav__list {
@@ -683,7 +684,6 @@ main {
     flex-direction: column;
     align-items: center;
     position: relative;
-    
 }
 
 .education__item {
@@ -697,6 +697,7 @@ main {
     width: 100%; /* Make items fill the container width */
     max-width: 100%; /* Ensure items don’t exceed the container width */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 10px 40px 10px;
 }
 
 .education__item-content {
@@ -724,6 +725,7 @@ main {
     color: var(--text-color);
     font-size: var(--normal-font-size);
     margin-bottom: 1rem;
+    text-align: justify;
 }
 
 .education__timeline {
@@ -940,6 +942,7 @@ main {
 
 /* For large devices */
 @media screen and (min-width: 1023px) {
+
     .section {
         padding-block: 7rem 2rem;
     }
@@ -970,7 +973,7 @@ main {
 @media screen and (min-width: 1152px){
     .container {
         margin-inline: auto;
-    }
+    }   
 
     .nav {
         padding: 2.5rem;
