@@ -202,7 +202,11 @@ main {
     }
     .button-CV {
         margin-top: .8rem;
+        margin-right: 8px;
+    }
 
+    .contact__input {
+        margin-right: 5px;
     }
 }
 
