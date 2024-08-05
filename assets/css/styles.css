@@ -320,6 +320,11 @@ main {
     transition: box-shadow .4s;
 }
 
+.button-CV {
+    background-color: rgb(126, 71, 59); 
+    margin-left: 10px;
+}
+
 .button:hover {
     box-shadow: 0 8px 24px hsl(var(--hue), 100%, 40% , .25);
 }
@@ -879,6 +884,12 @@ main {
         padding-block: 1.5rem;
     }
 
+    .education__item {
+        padding: 1.1rem;
+    }
+    .button {
+        padding-top: 10px;
+    }
 }
 
 
