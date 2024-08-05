@@ -107,6 +107,8 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             title: "Backend",
             items: [
+                { icon: "/assets/img/icons/php-icon.svg", text: "PHP"},
+                { icon: "/assets/img/icons/c--4-icon.svg", text: "C#"},
                 { icon: "/assets/img/icons/laravel-icon.svg", text: "Laravel" },
                 { icon: "/assets/img/icons/dotnet-icon.svg", text: ".Net Entity Framework" }
             ]
@@ -116,6 +118,14 @@ document.addEventListener('DOMContentLoaded', function () {
             items: [
                 { icon: "/assets/img/icons/mysql-icon.svg", text: "Mysql" },
                 { icon: "/assets/img/icons/postgresql-icon.svg", text: "PostgreSQL" }
+            ]
+        },
+        {
+            title: "Control de versiones",
+            items: [
+                { icon: "/assets/img/icons/git-icon.svg", text: "Git" },
+                { icon: "/assets/img/icons/github-icon.svg", text: "GitHub" },
+                { icon: "/assets/img/icons/bitbucket-icon.svg", text: "Bitbucket" }
             ]
         },
         {
@@ -176,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             title: "Portafolio web personal",
             date: "Agosto 2024",
-            description: "Developed a full-stack web application that allows users to search for, play, and pause...",
+            description: "Portafolio Web personal. Desarrollado para compartir mis skills sobre desarrollo de software enfocado a Web development.",
             skills: ["HTML", "CSS", "Javascript"],
             githubLink: "https://github.com/user/podstream",
             projectLink: "https://ubaldosanjuandev.netlify.app/",
@@ -188,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             title: "Axio - API",
             date: "Julio 2024",
-            description: "Developed a RESTful API using Node.js and Express for managing data...",
+            description: "API REST para el registro de cursos, asi como actividades y tests (Codigo no mostrado por politicas de la empresa)",
             skills: [".Net Core", "Entity Framework", "PostgreSQL", "Swagger"],
             githubLink: "https://github.com/user/api-backend",
             projectLink: "https://api-backend.example.com",

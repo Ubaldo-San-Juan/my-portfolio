@@ -363,14 +363,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   
-  .skills__content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-  }
   
   .skills__group {
     flex: 1;
@@ -968,6 +963,12 @@ main {
     .nav__menu {
         width: initial;
     }
+
+    
+  .skills__content {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+  }
 }
 
 @media screen and (min-width: 1152px){
@@ -1010,6 +1011,14 @@ main {
         min-width: 0; /* Permite que las columnas se ajusten */
     }
 
+
+    
+  .skills__content {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+  }
+
+  
     .contact__container {
         grid-template-columns: 680px;
         padding-block: 2.5rem 2rem;
