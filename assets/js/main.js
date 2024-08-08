@@ -209,15 +209,15 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             title: "Sistema Control de clientes por tiempo",
-            date: "Ago 2023 - Oct 2023",
+            date: "Ago 2022 - Oct 2022",
             description: "Aplicación de escritorio indispensable para cibercafés y negocios similares, diseñada para gestionar el cobro de tiempos de uso de manera eficiente y sencilla.",
             skills: ["Java", "Java Swing"],
-            githubLink: "",
-            projectLink: "",
+            githubLink: "https://github.com/Ubaldo-San-Juan/SistemaControlClientes_V1.git",
+            projectLink: "https://drive.google.com/file/d/1bSffeCqjlLx-V781fg8-9ZH3L_BP2LHb/view?usp=sharing",
             category: "otros",
             image: "/assets/img/projects/others/control-clientes-tiempo.png",
             showGithub: true,
-            showProject: false
+            showProject: true
         }
     ];
 
