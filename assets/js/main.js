@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             title: "La Casa de la Tía",
             date: "Agosto 2024",
-            description: "Sitio web oficial del restaurante llamado La Casa de la Tía",
+            description: "Sitio web oficial del restaurante La Casa de la Tía. Esta plataforma permite a los visitantes explorar el menú, obtener información de contacto y conocer la historia del restaurante, todo en un entorno intuitivo y accesible desde cualquier dispositivo.",
             skills: ["Angular", "HTML", "CSS", "Typescript"],
             githubLink: "https://github.com/user/trackify",
             projectLink: "https://lacasadelatiahuasca.com/",
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             title: "Portafolio web personal",
             date: "Agosto 2024",
-            description: "Portafolio Web personal. Desarrollado para compartir mis skills sobre desarrollo de software enfocado a Web development.",
+            description: "Portafolio web personal diseñado para mostrar mis habilidades en desarrollo de software, con un enfoque en desarrollo web. Incluye proyectos destacados y una presentación clara de mis competencias técnicas.",
             skills: ["HTML", "CSS", "Javascript"],
             githubLink: "https://github.com/user/podstream",
             projectLink: "https://ubaldosanjuandev.netlify.app/",
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             title: "Axio - API",
             date: "Julio 2024",
-            description: "API REST para el registro de cursos, asi como actividades y tests (Codigo no mostrado por politicas de la empresa)",
+            description: "API REST robusta diseñada para la administración integral de cursos, que abarca el registro de actividades y la gestión de evaluaciones, garantizando un control eficiente del contenido educativo. (Codigo fuente no mostrado debido a políticas de confidencialidad).",
             skills: [".Net Core", "Entity Framework", "PostgreSQL", "Swagger"],
             githubLink: "https://github.com/user/api-backend",
             projectLink: "https://api-backend.example.com",
@@ -208,9 +208,9 @@ document.addEventListener('DOMContentLoaded', function () {
             showProject: false
         },
         {
-            title: "Sistema Control de clientes por tiempo",
+            title: "Sistema Control de clientes",
             date: "Ago 2022 - Oct 2022",
-            description: "Aplicación de escritorio indispensable para cibercafés y negocios similares, diseñada para gestionar el cobro de tiempos de uso de manera eficiente y sencilla.",
+            description: "Aplicación de escritorio esencial para cibercafés y negocios similares, diseñada para gestionar de manera eficiente el cobro a clientes por tiempo de uso, con una interfaz simple y efectiva.",
             skills: ["Java", "Java Swing"],
             githubLink: "https://github.com/Ubaldo-San-Juan/SistemaControlClientes_V1.git",
             projectLink: "https://drive.google.com/file/d/1bSffeCqjlLx-V781fg8-9ZH3L_BP2LHb/view?usp=sharing",
