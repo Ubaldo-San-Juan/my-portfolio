@@ -107,17 +107,19 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             title: "Backend",
             items: [
-                { icon: "/assets/img/icons/php-icon.svg", text: "PHP"},
+                
                 { icon: "/assets/img/icons/c--4-icon.svg", text: "C#"},
-                { icon: "/assets/img/icons/laravel-icon.svg", text: "Laravel" },
-                { icon: "/assets/img/icons/dotnet-icon.svg", text: ".Net Entity Framework" }
+                { icon: "/assets/img/icons/java-icon.svg", text: "Java"},
+                { icon: "/assets/img/icons/dotnet-icon.svg", text: ".Net Core"},
+                { icon: "/assets/img/icons/spring-boot-icon.svg", text: "Spring Boot"}
             ]
         },
         {
             title: "Bases de datos",
             items: [
                 { icon: "/assets/img/icons/mysql-icon.svg", text: "Mysql" },
-                { icon: "/assets/img/icons/postgresql-icon.svg", text: "PostgreSQL" }
+                { icon: "/assets/img/icons/postgresql-icon.svg", text: "PostgreSQL" },
+                { icon: "/assets/img/icons/sql-server-icono.svg", text: "SQLServer" }
             ]
         },
         {
@@ -125,7 +127,8 @@ document.addEventListener('DOMContentLoaded', function () {
             items: [
                 { icon: "/assets/img/icons/git-icon.svg", text: "Git" },
                 { icon: "/assets/img/icons/github-icon.svg", text: "GitHub" },
-                { icon: "/assets/img/icons/bitbucket-icon.svg", text: "Bitbucket" }
+                { icon: "/assets/img/icons/gitlab-icon.svg", text: "GitLab" },
+                { icon: "/assets/img/icons/azure-icon.svg", text: "Azure Devops" }
             ]
         },
         {
