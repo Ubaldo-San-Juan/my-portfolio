@@ -199,6 +199,18 @@ document.addEventListener('DOMContentLoaded', function () {
             showProject: true
         },
         {
+            title: "Scientific Calculator APP",
+            date: "Diciembre 2024",
+            description: "Calculadora científica en Angular con operaciones básicas y avanzadas como seno, raíz cuadrada y logaritmos, además de un botón para alternar entre modo claro y oscuro.",
+            skills: ["Angular", "HTML", "CSS", "Typescript"],
+            githubLink: "https://github.com/Ubaldo-San-Juan/scientific-calculator-app",
+            projectLink: "https://scientific-calculator-app-usan.netlify.app",
+            category: "frontend",
+            image: "/assets/img/projects/frontend/calculator-app.png",
+            showGithub: true,
+            showProject: true
+        },
+        {
             title: "Axio - API",
             date: "Julio 2024",
             description: "API REST robusta diseñada para la administración integral de cursos, que abarca el registro de actividades y la gestión de evaluaciones, garantizando un control eficiente del contenido educativo. (Codigo fuente no mostrado debido a políticas de confidencialidad).",
