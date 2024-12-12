@@ -107,11 +107,11 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             title: "Backend",
             items: [
-                
-                { icon: "/assets/img/icons/c--4-icon.svg", text: "C#"},
-                { icon: "/assets/img/icons/java-icon.svg", text: "Java"},
-                { icon: "/assets/img/icons/dotnet-icon.svg", text: ".Net Core"},
-                { icon: "/assets/img/icons/spring-boot-icon.svg", text: "Spring Boot"}
+
+                { icon: "/assets/img/icons/c--4-icon.svg", text: "C#" },
+                { icon: "/assets/img/icons/java-icon.svg", text: "Java" },
+                { icon: "/assets/img/icons/dotnet-icon.svg", text: ".Net Core" },
+                { icon: "/assets/img/icons/spring-boot-icon.svg", text: "Spring Boot" }
             ]
         },
         {
@@ -150,10 +150,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     <ul class="skills__list">
                         ${skillGroup.items.map(item => `
                             <li class="skills__item">
-                                ${item.icon.startsWith('ri-') ? 
-                                    `<i class="${item.icon}"></i>` :
-                                    `<i><img src="${item.icon}" alt="" class="skills__icon"></i>`
-                                }
+                                ${item.icon.startsWith('ri-') ?
+                    `<i class="${item.icon}"></i>` :
+                    `<i><img src="${item.icon}" alt="" class="skills__icon"></i>`
+                }
                                 <span>${item.text}</span>
                             </li>
                         `).join('')}

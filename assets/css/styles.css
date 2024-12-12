@@ -752,6 +752,65 @@ main {
     bottom: 0;
 }
 
+/* Section Diplomas Styles */
+
+.diplomas__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.diplomas__content {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.diploma {
+    max-width: 450px;
+    background-color: var(--container-color);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .diploma a {
+    text-decoration: none
+  }
+  
+  .content {
+    padding: 1.1rem;
+  }
+  
+  .diploma-image {
+    width: 100%;
+    height: 280px;
+  }
+
+  .diploma-image img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .title {
+    color: var(--title-color);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  
+  .desc {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+
+
 
 
 .languages__general-container {
@@ -955,7 +1014,8 @@ main {
     .experience__container,
     .projects__container,
     .education__container,
-    .contact__container
+    .contact__container,
+    .diplomas__container
     {
         grid-template-columns: 360px;
         justify-content: center;
@@ -1020,6 +1080,11 @@ main {
   .skills__content {
     display: grid;
     grid-template-columns: 200px 200px 200px 200px;
+  }
+
+  .diplomas__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
  .languages__general-container {
