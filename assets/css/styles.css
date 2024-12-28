@@ -787,7 +787,7 @@ main {
   
   .diploma-image {
     width: 100%;
-    height: 280px;
+    height: 200px;
   }
 
   .diploma-image img {
@@ -1002,6 +1002,7 @@ main {
     .contact__input {
         margin-right: 6px;
     }
+
 }
 
 
@@ -1021,6 +1022,10 @@ main {
         justify-content: center;
     }
 
+    .diploma-image {
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (min-width: 768px){
@@ -1043,6 +1048,10 @@ main {
 
     .home__blob {
         width: 400px;
+    }
+    .diploma-image {
+        width: 100%;
+        height: 70%;
     }
 }
 
