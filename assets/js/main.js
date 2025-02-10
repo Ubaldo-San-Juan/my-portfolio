@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
             showProject: true
         },
         {
-            title: "Scientific Calculator APP",
+            title: "Calculadora Científica",
             date: "Diciembre 2024",
             description: "Calculadora científica en Angular con operaciones básicas y avanzadas como seno, raíz cuadrada y logaritmos, además de un botón para alternar entre modo claro y oscuro.",
             skills: ["Angular", "HTML", "CSS", "Typescript"],
