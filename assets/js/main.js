@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 { icon: "ri-html5-fill", text: "HTML5" },
                 { icon: "ri-css3-line", text: "CSS3" },
                 { icon: "ri-javascript-line", text: "JavaScript" },
+                { icon: "/assets/img/icons/typescript-icon.png", text: "TypeScript" },
                 { icon: "/assets/img/icons/angular-icon.svg", text: "Angular" }
             ]
         },
@@ -109,9 +110,9 @@ document.addEventListener('DOMContentLoaded', function () {
             items: [
 
                 { icon: "/assets/img/icons/c--4-icon.svg", text: "C#" },
-                { icon: "/assets/img/icons/java-icon.svg", text: "Java" },
                 { icon: "/assets/img/icons/dotnet-icon.svg", text: ".Net Core" },
-                { icon: "/assets/img/icons/spring-boot-icon.svg", text: "Spring Boot" }
+                { icon: "/assets/img/icons/EFCore-icon.png", text: "EF Core" },
+
             ]
         },
         {
@@ -119,7 +120,9 @@ document.addEventListener('DOMContentLoaded', function () {
             items: [
                 { icon: "/assets/img/icons/mysql-icon.svg", text: "Mysql" },
                 { icon: "/assets/img/icons/postgresql-icon.svg", text: "PostgreSQL" },
-                { icon: "/assets/img/icons/sql-server-icono.svg", text: "SQLServer" }
+                { icon: "/assets/img/icons/sql-server-icono.svg", text: "SQLServer" },
+                { icon: "/assets/img/icons/management-studio-icon.png", text: "Management Studio" },
+                { icon: "/assets/img/icons/rider-icon.svg", text: "JetBrains Rider" },
             ]
         },
         {
@@ -127,8 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
             items: [
                 { icon: "/assets/img/icons/git-icon.svg", text: "Git" },
                 { icon: "/assets/img/icons/github-icon.svg", text: "GitHub" },
-                { icon: "/assets/img/icons/gitlab-icon.svg", text: "GitLab" },
-                { icon: "/assets/img/icons/azure-icon.svg", text: "Azure Devops" }
+                { icon: "/assets/img/icons/gitlab-icon.svg", text: "GitLab" }
             ]
         },
         {
@@ -136,6 +138,14 @@ document.addEventListener('DOMContentLoaded', function () {
             items: [
                 { icon: "/assets/img/icons/linux-ubuntu-icon.svg", text: "Ubuntu" },
                 { icon: "/assets/img/icons/kali-linux-icon.svg", text: "Kali linux" }
+            ]
+        },
+        {
+            title: "Otros",
+            items: [
+                { icon: "/assets/img/icons/visual-studio-code-icon.svg", text: "VS Code" },
+                { icon: "/assets/img/icons/visual-studio-icon.svg", text: "Visual Studio" },
+                { icon: "/assets/img/icons/postman-icon.svg", text: "Postman" }
             ]
         }
     ];
