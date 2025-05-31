@@ -1086,10 +1086,7 @@ main {
     }
 
     
-  .skills__content {
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-  }
+
 
   .diplomas__content{
     display: grid;
@@ -1146,7 +1143,7 @@ main {
     
   .skills__content {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-columns: 210px 210px 250px 210px;
   }
 
 
