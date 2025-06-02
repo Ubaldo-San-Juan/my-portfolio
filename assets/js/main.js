@@ -121,8 +121,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 { icon: "/assets/img/icons/mysql-icon.svg", text: "Mysql" },
                 { icon: "/assets/img/icons/postgresql-icon.svg", text: "PostgreSQL" },
                 { icon: "/assets/img/icons/sql-server-icono.svg", text: "SQLServer" },
-                { icon: "/assets/img/icons/management-studio-icon.png", text: "Management Studio" },
-                { icon: "/assets/img/icons/rider-icon.svg", text: "JetBrains Rider" },
+                { icon: "/assets/img/icons/docker-icon.svg", text: "Docker" },
+                { icon: "/assets/img/icons/management-studio-icon.png", text: "Management Studio" }
             ]
         },
         {
@@ -145,6 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
             items: [
                 { icon: "/assets/img/icons/visual-studio-code-icon.svg", text: "VS Code" },
                 { icon: "/assets/img/icons/visual-studio-icon.svg", text: "Visual Studio" },
+                { icon: "/assets/img/icons/rider-icon.svg", text: "JetBrains Rider" },
                 { icon: "/assets/img/icons/postman-icon.svg", text: "Postman" }
             ]
         }
