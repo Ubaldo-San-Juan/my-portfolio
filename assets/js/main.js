@@ -247,14 +247,14 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             title: "Lavaya",
-            date: "Junio 2025 - Abril 2026",
-            description: "Sistema de gestión de lavandería construido con Angular, Electron y Tailwind para el frontend, y .NET con Entity Framework y PostgreSQL para el backend siguiendo el patrón de 3 capas.",
-            skills: ["Angular", "Electron", "Tailwind", ".Net Core", "EF Core", "PostgreSQL"],
-            githubLink: "https://github.com/Ubaldo-San-Juan/LAVAYA-Frontend",
+            date: "Marzo 2026 - Abril 2026",
+            description: "Plataforma web integral para la administración operativa de un negocio de lavandería. Diseñada para digitalizar procesos, incluye la creación y seguimiento de tickets de servicio, gestión de base de clientes, control de flujo de caja y dashboard con métricas en tiempo real. (Código fuente no mostrado debido a políticas de confidencialidad)",
+            skills: ["Angular", "Electron", "Tailwind CSS", "TypeScript", ".Net Core", "Entity Framework", "PostgreSQL"],
+            githubLink: "",
             projectLink: "",
             category: "escritorio",
-            image: "/assets/img/projects/escritorio/lavaya.png",
-            showGithub: true,
+            image: "/assets/img/projects/escritorio/lavaya-system.png",
+            showGithub: false,
             showProject: false
         }
     ];
