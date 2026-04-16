@@ -191,9 +191,9 @@ document.addEventListener('DOMContentLoaded', function () {
             description: "Sitio web oficial del restaurante La Casa de la Tía. Esta plataforma permite a los visitantes explorar el menú, obtener información de contacto y conocer la historia del restaurante, todo en un entorno intuitivo y accesible desde cualquier dispositivo.",
             skills: ["Angular", "HTML", "CSS", "Typescript"],
             githubLink: "",
-            projectLink: "https://lacasadelatiahuasca.com/",
-            category: "frontend",
-            image: "/assets/img/projects/frontend/la-casa-de-la-tia.png",
+            projectLink: "https://lacasadelatia-2026.netlify.app/",
+            category: "web",
+            image: "/assets/img/projects/web/la-casa-de-la-tia.png",
             showGithub: false,
             showProject: true
         },
@@ -204,8 +204,8 @@ document.addEventListener('DOMContentLoaded', function () {
             skills: ["HTML", "CSS", "Javascript"],
             githubLink: "https://github.com/Ubaldo-San-Juan/my-portfolio",
             projectLink: "https://ubaldosanjuandev.netlify.app/",
-            category: "frontend",
-            image: "/assets/img/projects/frontend/my-portfolio.png",
+            category: "web",
+            image: "/assets/img/projects/web/my-portfolio.png",
             showGithub: true,
             showProject: true
         },
@@ -216,8 +216,8 @@ document.addEventListener('DOMContentLoaded', function () {
             skills: ["Angular", "HTML", "CSS", "Typescript"],
             githubLink: "https://github.com/Ubaldo-San-Juan/scientific-calculator-app",
             projectLink: "https://scientific-calculator-app-usan.netlify.app",
-            category: "frontend",
-            image: "/assets/img/projects/frontend/calculator-app.png",
+            category: "web",
+            image: "/assets/img/projects/web/calculator-app.png",
             showGithub: true,
             showProject: true
         },
@@ -240,10 +240,22 @@ document.addEventListener('DOMContentLoaded', function () {
             skills: ["Java", "Java Swing"],
             githubLink: "https://github.com/Ubaldo-San-Juan/SistemaControlClientes_V1.git",
             projectLink: "https://drive.google.com/file/d/1bSffeCqjlLx-V781fg8-9ZH3L_BP2LHb/view?usp=sharing",
-            category: "otros",
-            image: "/assets/img/projects/others/control-clientes-tiempo.png",
+            category: "escritorio",
+            image: "/assets/img/projects/escritorio/control-clientes-tiempo.png",
             showGithub: true,
             showProject: true
+        },
+        {
+            title: "Lavaya",
+            date: "Junio 2025 - Abril 2026",
+            description: "Sistema de gestión de lavandería construido con Angular, Electron y Tailwind para el frontend, y .NET con Entity Framework y PostgreSQL para el backend siguiendo el patrón de 3 capas.",
+            skills: ["Angular", "Electron", "Tailwind", ".Net Core", "EF Core", "PostgreSQL"],
+            githubLink: "https://github.com/Ubaldo-San-Juan/LAVAYA-Frontend",
+            projectLink: "",
+            category: "escritorio",
+            image: "/assets/img/projects/escritorio/lavaya.png",
+            showGithub: true,
+            showProject: false
         }
     ];
 
