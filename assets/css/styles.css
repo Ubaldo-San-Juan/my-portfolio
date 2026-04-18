@@ -373,19 +373,26 @@ main {
 
 
 .skills__group {
-    background: hsla(var(--hue), 15%, 15%, .4);
-    backdrop-filter: blur(12px);
-    border: 1px solid hsla(var(--hue), 100%, 40%, .2);
-    border-radius: 1.25rem;
-    padding: 2rem;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    transition: all .4s cubic-bezier(0.4, 0, 0.2, 1);
+    flex: 1;
+    min-width: 250px;
+    /* Ajusta el ancho mínimo si es necesario */
+    background: #222;
+    /* Fondo del contenedor */
+    border: 2px solid #2f4362;
+    /* Contorno fosforescente */
+    border-radius: 15px;
+    /* Biselado */
+    padding: 1rem;
+    box-shadow: 0 0 15px rgba(156, 158, 156, 0.7);
+    /* Sombra fosforescente */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .skills__group:hover {
-    transform: translateY(-10px) scale(1.02);
-    border-color: var(--first-color);
-    box-shadow: 0 12px 40px hsla(var(--hue), 100%, 40%, .2);
+    transform: scale(1.05);
+    /* Efecto de escala al pasar el ratón */
+    box-shadow: 0 0 20px rgb(133, 184, 133);
+    /* Efecto de contorno más brillante */
 }
 
 .skills__group-title {
@@ -402,8 +409,7 @@ main {
 }
 
 .skills__item {
-    background: hsla(var(--hue), 100%, 40%, .1);
-    border: 1px solid hsla(var(--hue), 100%, 40%, .2);
+    background: #333;
     border-radius: 10px;
     /* Biselado de los items */
     padding: 0.5rem;
@@ -494,22 +500,18 @@ main {
 }
 
 .experience__item-content {
-    background: hsla(var(--hue), 15%, 15%, .4);
-    backdrop-filter: blur(12px);
-    border: 1px solid hsla(var(--hue), 100%, 40%, .2);
-    border-radius: 1.25rem;
+    background-color: var(--container-color);
     padding: 2rem;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 800px;
     text-align: left;
-    transition: all .4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform .3s;
 }
 
 .experience__item:hover .experience__item-content {
-    transform: translateY(-10px) scale(1.01);
-    border-color: var(--first-color);
-    box-shadow: 0 12px 40px hsla(var(--hue), 100%, 40%, .2);
+    transform: translateX(10px);
 }
 
 .experience__item-title {
@@ -583,23 +585,15 @@ main {
 }
 
 .projects__item {
-    background: hsla(var(--hue), 15%, 15%, .4);
-    backdrop-filter: blur(12px);
-    border: 1px solid hsla(var(--hue), 100%, 40%, .2);
-    border-radius: 1.25rem;
+    background-color: var(--container-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
     overflow: hidden;
-    width: 310px;
+    width: 300px;
     display: flex;
     flex-direction: column;
-    margin: 1rem;
-    transition: all .4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-}
-
-.projects__item:hover {
-    transform: translateY(-10px) scale(1.02);
-    border-color: var(--first-color);
-    box-shadow: 0 12px 40px hsla(var(--hue), 100%, 40%, .2);
+    /* Hace que el contenedor sea flexible en columna */
 }
 
 .projects__img {
@@ -645,11 +639,10 @@ main {
 }
 
 .projects__item-skills span {
-    background: hsla(var(--hue), 100%, 40%, .1);
-    color: var(--first-color);
-    border: 1px solid hsla(var(--hue), 100%, 40%, .2);
+    background: #6C63FF;
+    color: #fff;
     padding: 0.25rem 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     font-size: var(--small-font-size);
 }
 
@@ -727,23 +720,19 @@ main {
 .education__item {
     display: flex;
     align-items: center;
-    background: hsla(var(--hue), 15%, 15%, .4);
-    backdrop-filter: blur(12px);
-    border: 1px solid hsla(var(--hue), 100%, 40%, .2);
-    border-radius: 1.25rem;
-    padding: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    background-color: #333;
+    /* Set the color for the education items */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
     width: 100%;
+    /* Make items fill the container width */
     max-width: 100%;
+    /* Ensure items don’t exceed the container width */
     box-sizing: border-box;
-    margin: 20px 0;
-    transition: all .4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-}
-
-.education__item:hover {
-    transform: translateY(-10px) scale(1.02);
-    border-color: var(--first-color);
-    box-shadow: 0 12px 40px hsla(var(--hue), 100%, 40%, .2);
+    /* Include padding and border in the element's total width and height */
+    margin: 10px 40px 10px;
 }
 
 .education__item-content {
@@ -821,22 +810,12 @@ main {
 
 .diploma {
     max-width: 450px;
-    background: hsla(var(--hue), 15%, 15%, .4);
-    backdrop-filter: blur(12px);
-    border: 1px solid hsla(var(--hue), 100%, 40%, .2);
-    border-radius: 1.25rem;
+    background-color: var(--container-color);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
     margin: 20px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    transition: all .4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-}
-
-.diploma:hover {
-    transform: translateY(-10px) scale(1.02);
-    border-color: var(--first-color);
-    box-shadow: 0 12px 40px hsla(var(--hue), 100%, 40%, .2);
 }
 
 .diploma a {
@@ -889,19 +868,21 @@ main {
     align-items: center;
     text-align: center;
     margin: 3rem;
-    background: hsla(var(--hue), 15%, 15%, .4);
-    backdrop-filter: blur(12px);
-    border: 1px solid hsla(var(--hue), 100%, 40%, .2);
-    border-radius: 1.25rem;
-    padding: 2rem;
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    transition: all .4s cubic-bezier(0.4, 0, 0.2, 1);
+    background: #222;
+    /* Fondo del contenedor */
+    border: 2px solid #2f4362;
+    /* Contorno fosforescente */
+    border-radius: 15px;
+    /* Biselado */
+    padding: 1rem;
+    box-shadow: 0 0 15px rgba(156, 158, 156, 0.7);
+    /* Sombra fosforescente */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .languages__group:hover {
-    transform: translateY(-10px) scale(1.02);
-    border-color: var(--first-color);
-    box-shadow: 0 12px 40px hsla(var(--hue), 100%, 40%, .2);
+    transform: scale(1.05);
+    /* Efecto de escala al pasar el ratón */
 }
 
 .languages__group-title {
@@ -914,8 +895,7 @@ main {
 
 
 .languages__item {
-    background: hsla(var(--hue), 100%, 40%, .1);
-    border: 1px solid hsla(var(--hue), 100%, 40%, .2);
+    background: #333;
     border-radius: 10px;
     /* Biselado de los items */
     padding: 0.5rem;
