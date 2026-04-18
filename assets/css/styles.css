@@ -391,7 +391,7 @@ main {
 .skills__group:hover {
     transform: scale(1.05);
     /* Efecto de escala al pasar el ratón */
-    box-shadow: 0 0 20px rgba(0, 255, 0, 1);
+    box-shadow: 0 0 20px rgb(133, 184, 133);
     /* Efecto de contorno más brillante */
 }
 
