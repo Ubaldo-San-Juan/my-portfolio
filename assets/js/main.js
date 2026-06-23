@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', function () {
             description: "Sitio web oficial del restaurante La Casa de la Tía. Esta plataforma permite a los visitantes explorar el menú, obtener información de contacto y conocer la historia del restaurante, todo en un entorno intuitivo y accesible desde cualquier dispositivo.",
             skills: ["Angular", "HTML", "CSS", "Typescript"],
             githubLink: "",
-            projectLink: "https://lacasadelatia-2026.netlify.app/",
+            projectLink: "https://lacasadelatiahuasca.com/",
             category: "web",
             image: "/assets/img/projects/web/la-casa-de-la-tia.png",
             showGithub: false,
