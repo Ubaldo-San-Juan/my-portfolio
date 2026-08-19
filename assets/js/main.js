@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const projects = [
         {
             title: "La Casa de la Tía",
-            date: "Agosto 2024",
+            date: "Junio 2026",
             description: "Sitio web oficial del restaurante La Casa de la Tía. Esta plataforma permite a los visitantes explorar el menú, obtener información de contacto y conocer la historia del restaurante, todo en un entorno intuitivo y accesible desde cualquier dispositivo.",
             skills: ["Angular", "HTML", "CSS", "Typescript"],
             githubLink: "",
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             title: "Lavaya",
-            date: "Marzo 2026 - Abril 2026",
+            date: "Febrero 2026 - Mayo 2026",
             description: "Aplicación de escritorio integral para la administración operativa de un negocio de lavandería. Diseñada para digitalizar procesos, incluye la creación y seguimiento de tickets de servicio, gestión de base de clientes, control de flujo de caja y dashboard con métricas en tiempo real. (Código fuente no mostrado debido a políticas de confidencialidad)",
             skills: ["Angular", "Electron", "Tailwind CSS", "TypeScript", ".Net Core", "Entity Framework", "PostgreSQL"],
             githubLink: "",
